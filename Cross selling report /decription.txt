@@ -1,0 +1,38 @@
+In this project, an e-commerce store provided me with data of their sales transactions, and asked me to generate a cross-selling report by categorizing the sales based on product 
+combinations. We meticulously analyzed the sales data,extracted category codes, and grouped the information by month, ultimately identifying the top 13 most frequently sold item combinations.
+This comprehensive analysis offers valuable insights into customer preferences and popular product pairings, enabling the e-commerce store to optimize their marketing strategies and enhance
+the overall shopping experience. 
+
+
+Problem statements : 
+let us walk you through some definitions,
+Parent product: Those SKUs which don’t describe any variations.
+For ex: Barbell-1, Ball-2, Ring-94, Care-Disc, etc.
+
+
+Child product: Those SKUs which display coded variations in terms of material, size, stone color, etc.
+For ex: Nose-177-GD-3 & Nose-177-K-3. They belong to the parent product Nose-177.
+
+
+
+
+Objective - Analyse the provided sample data to determine which products are commonly sold together, generating a Cross-Selling Report.
+The report should showcase the ranking of product pairs, ranging from 1 to 13. For example:
+
+
+
+
+
+
+The list should go on for each Parent Product.
+
+Data tables - You shall find two tables,
+Sales Data: Contains all relevant sales data. For this report, focus solely on the 'Document No' and 'Item No' columns. The sales amount is excluded for simplicity.
+Item Categories: The column ‘No.’ contains child product level, while ‘Item Category Code’ contains parent products.
+
+Timeframe - The provided data covers sales information for three months. Your report should display results for each individual month and a consolidated view 
+for the entire three-month period.
+
+Efficiency Considerations - The report's processing speed is crucial. Avoid using Nested IFS if possible, as they may slow down the report.
+Opt for logical methods that enhance performance. If there are alternative logical approaches to achieve the same result without compromising speed, incorporate them. 
+
